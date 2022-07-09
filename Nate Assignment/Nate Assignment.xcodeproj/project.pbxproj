@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311A1BCA5279EBE815A51A17 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E737BC8A23D1E33C8EC70118 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework */; };
+		9EF01EF8BDCA7370BE56680B /* Pods_Nate_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AFF8DB8B22E2D3211F803C /* Pods_Nate_Assignment.framework */; };
+		D0309F2EF3A95F1B0BD35972 /* Pods_Nate_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE6FD5D7B83892F5B431BC /* Pods_Nate_AssignmentTests.framework */; };
 		F75636F5287994F70013EBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F4287994F70013EBC7 /* AppDelegate.swift */; };
 		F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F6287994F70013EBC7 /* SceneDelegate.swift */; };
 		F75636F9287994F70013EBC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F8287994F70013EBC7 /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 		F756370C287994FA0013EBC7 /* Nate_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756370B287994FA0013EBC7 /* Nate_AssignmentTests.swift */; };
 		F7563716287994FA0013EBC7 /* Nate_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7563715287994FA0013EBC7 /* Nate_AssignmentUITests.swift */; };
 		F7563718287994FA0013EBC7 /* Nate_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7563717287994FA0013EBC7 /* Nate_AssignmentUITestsLaunchTests.swift */; };
+		F75637282879AE670013EBC7 /* ProductsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75637272879AE670013EBC7 /* ProductsApi.swift */; };
+		F756372A2879AE820013EBC7 /* ApiConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75637292879AE820013EBC7 /* ApiConsts.swift */; };
+		F756372D2879AEB00013EBC7 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756372C2879AEB00013EBC7 /* ProductCell.swift */; };
+		F756372F2879B1260013EBC7 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756372E2879B1260013EBC7 /* ProductModel.swift */; };
+		F75637322879B8330013EBC7 /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75637312879B8330013EBC7 /* ProductsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D36D623012063335D57329F /* Pods-Nate Assignment-Nate AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment-Nate AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8D200A6B7D79779F6DECD6 /* Pods-Nate Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		C001E87C8D41D22C80FD3803 /* Pods-Nate AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Nate AssignmentTests/Pods-Nate AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3AFF8DB8B22E2D3211F803C /* Pods_Nate_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CE6FD5D7B83892F5B431BC /* Pods_Nate_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E737BC8A23D1E33C8EC70118 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_Assignment_Nate_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB63EF71D21B5C6E293B1784 /* Pods-Nate Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment.release.xcconfig"; path = "Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		F153645E09ABAF31B1724413 /* Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F75636F1287994F70013EBC7 /* Nate Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nate Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75636F4287994F70013EBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75636F6287994F70013EBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,12 @@
 		F7563711287994FA0013EBC7 /* Nate AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nate AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7563715287994FA0013EBC7 /* Nate_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nate_AssignmentUITests.swift; sourceTree = "<group>"; };
 		F7563717287994FA0013EBC7 /* Nate_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nate_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F75637272879AE670013EBC7 /* ProductsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsApi.swift; sourceTree = "<group>"; };
+		F75637292879AE820013EBC7 /* ApiConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConsts.swift; sourceTree = "<group>"; };
+		F756372C2879AEB00013EBC7 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		F756372E2879B1260013EBC7 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		F75637312879B8330013EBC7 /* ProductsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsManager.swift; sourceTree = "<group>"; };
+		FF07C51D020AC9ECFCB2EB48 /* Pods-Nate AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Nate AssignmentTests/Pods-Nate AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF01EF8BDCA7370BE56680B /* Pods_Nate_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0309F2EF3A95F1B0BD35972 /* Pods_Nate_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311A1BCA5279EBE815A51A17 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69D3D2E70BF113FF702E02EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3AFF8DB8B22E2D3211F803C /* Pods_Nate_Assignment.framework */,
+				E737BC8A23D1E33C8EC70118 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework */,
+				E2CE6FD5D7B83892F5B431BC /* Pods_Nate_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F9A591FA55DC93220C0A502 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F8D200A6B7D79779F6DECD6 /* Pods-Nate Assignment.debug.xcconfig */,
+				EB63EF71D21B5C6E293B1784 /* Pods-Nate Assignment.release.xcconfig */,
+				7D36D623012063335D57329F /* Pods-Nate Assignment-Nate AssignmentUITests.debug.xcconfig */,
+				F153645E09ABAF31B1724413 /* Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig */,
+				C001E87C8D41D22C80FD3803 /* Pods-Nate AssignmentTests.debug.xcconfig */,
+				FF07C51D020AC9ECFCB2EB48 /* Pods-Nate AssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F75636E8287994F70013EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +131,8 @@
 				F756370A287994FA0013EBC7 /* Nate AssignmentTests */,
 				F7563714287994FA0013EBC7 /* Nate AssignmentUITests */,
 				F75636F2287994F70013EBC7 /* Products */,
+				9F9A591FA55DC93220C0A502 /* Pods */,
+				69D3D2E70BF113FF702E02EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +149,11 @@
 		F75636F3287994F70013EBC7 /* Nate Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				F75637262879AE3B0013EBC7 /* Controllers */,
+				F75637252879AE330013EBC7 /* Views */,
+				F75637242879AE2B0013EBC7 /* Models */,
 				F75636F4287994F70013EBC7 /* AppDelegate.swift */,
 				F75636F6287994F70013EBC7 /* SceneDelegate.swift */,
-				F75636F8287994F70013EBC7 /* ViewController.swift */,
 				F75636FA287994F70013EBC7 /* Main.storyboard */,
 				F75636FD287994FA0013EBC7 /* Assets.xcassets */,
 				F75636FF287994FA0013EBC7 /* LaunchScreen.storyboard */,
@@ -127,6 +179,41 @@
 			path = "Nate AssignmentUITests";
 			sourceTree = "<group>";
 		};
+		F75637242879AE2B0013EBC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F756372E2879B1260013EBC7 /* ProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F75637252879AE330013EBC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F756372B2879AEA20013EBC7 /* Cells */,
+				F75636F8287994F70013EBC7 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F75637262879AE3B0013EBC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F75637272879AE670013EBC7 /* ProductsApi.swift */,
+				F75637292879AE820013EBC7 /* ApiConsts.swift */,
+				F75637312879B8330013EBC7 /* ProductsManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F756372B2879AEA20013EBC7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F756372C2879AEB00013EBC7 /* ProductCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F756371B287994FA0013EBC7 /* Build configuration list for PBXNativeTarget "Nate Assignment" */;
 			buildPhases = (
+				C1ED768FC3BA46D355D07E43 /* [CP] Check Pods Manifest.lock */,
 				F75636ED287994F70013EBC7 /* Sources */,
 				F75636EE287994F70013EBC7 /* Frameworks */,
 				F75636EF287994F70013EBC7 /* Resources */,
+				CB4518F4F8889CD710C7B2D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F756371E287994FA0013EBC7 /* Build configuration list for PBXNativeTarget "Nate AssignmentTests" */;
 			buildPhases = (
+				A9B80C87F5A1E66AEAC673FB /* [CP] Check Pods Manifest.lock */,
 				F7563703287994FA0013EBC7 /* Sources */,
 				F7563704287994FA0013EBC7 /* Frameworks */,
 				F7563705287994FA0013EBC7 /* Resources */,
@@ -169,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7563721287994FA0013EBC7 /* Build configuration list for PBXNativeTarget "Nate AssignmentUITests" */;
 			buildPhases = (
+				F0CA999E137B61F154229F98 /* [CP] Check Pods Manifest.lock */,
 				F756370D287994FA0013EBC7 /* Sources */,
 				F756370E287994FA0013EBC7 /* Frameworks */,
 				F756370F287994FA0013EBC7 /* Resources */,
+				CF79ED710C0262DF96D996FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +345,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A9B80C87F5A1E66AEAC673FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1ED768FC3BA46D355D07E43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB4518F4F8889CD710C7B2D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF79ED710C0262DF96D996FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0CA999E137B61F154229F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate Assignment-Nate AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F75636ED287994F70013EBC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +455,12 @@
 			files = (
 				F75636F9287994F70013EBC7 /* ViewController.swift in Sources */,
 				F75636F5287994F70013EBC7 /* AppDelegate.swift in Sources */,
+				F75637282879AE670013EBC7 /* ProductsApi.swift in Sources */,
+				F756372D2879AEB00013EBC7 /* ProductCell.swift in Sources */,
+				F756372A2879AE820013EBC7 /* ApiConsts.swift in Sources */,
+				F756372F2879B1260013EBC7 /* ProductModel.swift in Sources */,
 				F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */,
+				F75637322879B8330013EBC7 /* ProductsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +632,7 @@
 		};
 		F756371C287994FA0013EBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8D200A6B7D79779F6DECD6 /* Pods-Nate Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +661,7 @@
 		};
 		F756371D287994FA0013EBC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB63EF71D21B5C6E293B1784 /* Pods-Nate Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +690,7 @@
 		};
 		F756371F287994FA0013EBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C001E87C8D41D22C80FD3803 /* Pods-Nate AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +711,7 @@
 		};
 		F7563720287994FA0013EBC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF07C51D020AC9ECFCB2EB48 /* Pods-Nate AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +732,7 @@
 		};
 		F7563722287994FA0013EBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D36D623012063335D57329F /* Pods-Nate Assignment-Nate AssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +751,7 @@
 		};
 		F7563723287994FA0013EBC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F153645E09ABAF31B1724413 /* Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
