@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -72,18 +73,42 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRl-a3-bT5">
+                                <rect key="frame" x="0.0" y="842" width="414" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muY-7E-g4x">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstItem="muY-7E-g4x" firstAttribute="leading" secondItem="oRl-a3-bT5" secondAttribute="leading" id="8JG-rX-sQh"/>
+                                    <constraint firstAttribute="height" constant="20" id="POm-Hq-7zR"/>
+                                    <constraint firstAttribute="trailing" secondItem="muY-7E-g4x" secondAttribute="trailing" id="Yf7-1Y-ohu"/>
+                                    <constraint firstItem="muY-7E-g4x" firstAttribute="top" secondItem="oRl-a3-bT5" secondAttribute="top" id="fCv-V8-qJl"/>
+                                    <constraint firstAttribute="bottom" secondItem="muY-7E-g4x" secondAttribute="bottom" id="v41-gZ-bj0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YwG-PH-fCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1xV-VN-8b2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oRl-a3-bT5" secondAttribute="trailing" id="5if-nr-TI6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YwG-PH-fCq" secondAttribute="trailing" id="Jny-qD-GTz"/>
                             <constraint firstItem="YwG-PH-fCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z3P-gy-YOz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YwG-PH-fCq" secondAttribute="bottom" id="aZZ-il-6Wp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oRl-a3-bT5" secondAttribute="bottom" id="mRs-q0-xxG"/>
+                            <constraint firstItem="oRl-a3-bT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pY1-oN-Aca"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="productsCollection" destination="YwG-PH-fCq" id="5Ao-RN-KB1"/>
+                        <outlet property="updatingListHeightConst" destination="POm-Hq-7zR" id="cfV-np-sL2"/>
+                        <outlet property="updatingListView" destination="oRl-a3-bT5" id="yze-sr-qh7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,6 +119,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
