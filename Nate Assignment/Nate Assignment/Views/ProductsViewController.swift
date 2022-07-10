@@ -14,8 +14,8 @@ class ProductsViewController: UIViewController {
     @IBOutlet weak var updatingListHeightConst: NSLayoutConstraint!
     
     // Variables
-    private var refresher: UIRefreshControl!
-    private var refreshing = false
+    private var refreshControl: UIRefreshControl!
+    private var currentlyRefreshing = false
     private let numberOfItemsInChunk = 16
     private var cellSize: CGSize {
         let halfWidth = productsCollection.frame.size.width / 2 - 10
@@ -41,20 +41,24 @@ extension ProductsViewController {
         productsCollection.delegate = self
         productsCollection.dataSource = self
         
-        refresher = UIRefreshControl()
-        productsCollection.alwaysBounceVertical = true
-        refresher.tintColor = UIColor.systemTeal
-        refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
-        productsCollection.refreshControl = refresher
-        productsCollection.addSubview(refresher)
+        setupRefreshControl()
     }
 }
 
 // MARK: - Convenience methods
 extension ProductsViewController {
+    private func setupRefreshControl() {
+        refreshControl = UIRefreshControl()
+        productsCollection.alwaysBounceVertical = true
+        refreshControl.tintColor = UIColor.systemTeal
+        refreshControl.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        productsCollection.refreshControl = refreshControl
+        productsCollection.addSubview(refreshControl)
+    }
+    
     private func startRefreshingData() {
-        if !refreshing {
-            refreshing = true
+        if !currentlyRefreshing {
+            currentlyRefreshing = true
             UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseIn, animations:{
                 self.updatingListHeightConst.constant = 30
                 self.view.layoutIfNeeded()
@@ -65,8 +69,7 @@ extension ProductsViewController {
     }
     
     private func endRefreshingData() {
-        if refreshing {
-//            refreshing = false
+        if currentlyRefreshing {
             UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseIn, animations:{
                 self.updatingListHeightConst.constant = 0
                 self.view.layoutIfNeeded()
@@ -95,7 +98,7 @@ extension ProductsViewController {
             let output = try result.get()
             productsResults = productsResults.union(output)
             stopRefresher()
-        }  catch let _ {
+        }  catch let _ { // TODO: Handle errors
             return
         }
     }
@@ -116,7 +119,7 @@ extension ProductsViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: ProductCell.identifier,
             for: indexPath) as? ProductCell else { return UICollectionViewCell() }
-        if indexPath.row >= productsResults.count - 1 && !refreshing {
+        if indexPath.row >= productsResults.count - 1 && !currentlyRefreshing {
             /// Are we in the last two items in the array?
             startRefreshingData()
         }
@@ -131,20 +134,20 @@ extension ProductsViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension ProductsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAt indexPath: IndexPath) -> CGSize {
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         return cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        insetForSectionAt section: Int) -> UIEdgeInsets {
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
     
     func collectionView(_ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
 }
@@ -163,8 +166,8 @@ extension ProductsViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         guard let last = productsCollection.indexPathsForVisibleItems.last,
-                last.item < productsResults.count - 2,
-                refreshing else { return }
-        refreshing = false
+              last.item < productsResults.count - 2,
+              currentlyRefreshing else { return }
+        currentlyRefreshing = false
     }
 }
