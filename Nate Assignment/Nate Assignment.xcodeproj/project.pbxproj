@@ -10,6 +10,7 @@
 		311A1BCA5279EBE815A51A17 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E737BC8A23D1E33C8EC70118 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework */; };
 		9EF01EF8BDCA7370BE56680B /* Pods_Nate_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AFF8DB8B22E2D3211F803C /* Pods_Nate_Assignment.framework */; };
 		D0309F2EF3A95F1B0BD35972 /* Pods_Nate_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE6FD5D7B83892F5B431BC /* Pods_Nate_AssignmentTests.framework */; };
+		F7050D7E287B057C0079B3D6 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7050D7D287B057C0079B3D6 /* CollectionExtension.swift */; };
 		F75636F5287994F70013EBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F4287994F70013EBC7 /* AppDelegate.swift */; };
 		F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F6287994F70013EBC7 /* SceneDelegate.swift */; };
 		F75636F9287994F70013EBC7 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F8287994F70013EBC7 /* ProductsViewController.swift */; };
@@ -51,6 +52,7 @@
 		E737BC8A23D1E33C8EC70118 /* Pods_Nate_Assignment_Nate_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_Assignment_Nate_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB63EF71D21B5C6E293B1784 /* Pods-Nate Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment.release.xcconfig"; path = "Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		F153645E09ABAF31B1724413 /* Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7050D7D287B057C0079B3D6 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		F75636F1287994F70013EBC7 /* Nate Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nate Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75636F4287994F70013EBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75636F6287994F70013EBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F7050D7C287B056C0079B3D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7050D7D287B057C0079B3D6 /* CollectionExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F75636E8287994F70013EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 		F75636F3287994F70013EBC7 /* Nate Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				F7050D7C287B056C0079B3D6 /* Extensions */,
 				F75637262879AE3B0013EBC7 /* Controllers */,
 				F75637252879AE330013EBC7 /* Views */,
 				F75637242879AE2B0013EBC7 /* Models */,
@@ -455,6 +466,7 @@
 				F75637282879AE670013EBC7 /* ProductsApi.swift in Sources */,
 				F756372D2879AEB00013EBC7 /* ProductCell.swift in Sources */,
 				F756372A2879AE820013EBC7 /* ApiConsts.swift in Sources */,
+				F7050D7E287B057C0079B3D6 /* CollectionExtension.swift in Sources */,
 				F756372F2879B1260013EBC7 /* ProductModel.swift in Sources */,
 				F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */,
 			);
@@ -642,6 +654,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,6 +684,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
