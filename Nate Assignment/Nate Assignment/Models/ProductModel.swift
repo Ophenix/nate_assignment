@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProductsContainer: Codable {
+struct ProductsModelContainer: Codable {
     struct ProductModel: Codable, Hashable {
         /// Optional params are a guess, I want the init to fail if I don't have the bare minimum needed for a product (Id, Title, Url, Images)
         /// So in case the server doesn't return the info I don't need I don't want the init to fail.
@@ -21,5 +21,5 @@ struct ProductsContainer: Codable {
         let merchant: String?
     }
     
-    let Products: [ProductModel]
+    let products: [ProductModel]
 }
