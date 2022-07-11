@@ -11,9 +11,12 @@
 		9EF01EF8BDCA7370BE56680B /* Pods_Nate_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AFF8DB8B22E2D3211F803C /* Pods_Nate_Assignment.framework */; };
 		D0309F2EF3A95F1B0BD35972 /* Pods_Nate_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE6FD5D7B83892F5B431BC /* Pods_Nate_AssignmentTests.framework */; };
 		F7050D7E287B057C0079B3D6 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7050D7D287B057C0079B3D6 /* CollectionExtension.swift */; };
+		F7050D80287C3AA50079B3D6 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7050D7F287C3AA50079B3D6 /* ProductDetailsViewController.swift */; };
+		F7397B43287C3C52007E4A31 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7397B42287C3C52007E4A31 /* ImageCollectionCell.swift */; };
+		F7397B46287C576F007E4A31 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7397B45287C576F007E4A31 /* Consts.swift */; };
 		F75636F5287994F70013EBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F4287994F70013EBC7 /* AppDelegate.swift */; };
 		F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F6287994F70013EBC7 /* SceneDelegate.swift */; };
-		F75636F9287994F70013EBC7 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F8287994F70013EBC7 /* ProductsViewController.swift */; };
+		F75636F9287994F70013EBC7 /* ProductsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F8287994F70013EBC7 /* ProductsCollectionViewController.swift */; };
 		F75636FC287994F70013EBC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75636FA287994F70013EBC7 /* Main.storyboard */; };
 		F75636FE287994FA0013EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75636FD287994FA0013EBC7 /* Assets.xcassets */; };
 		F7563701287994FA0013EBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75636FF287994FA0013EBC7 /* LaunchScreen.storyboard */; };
@@ -53,10 +56,13 @@
 		EB63EF71D21B5C6E293B1784 /* Pods-Nate Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment.release.xcconfig"; path = "Target Support Files/Pods-Nate Assignment/Pods-Nate Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		F153645E09ABAF31B1724413 /* Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Nate Assignment-Nate AssignmentUITests/Pods-Nate Assignment-Nate AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7050D7D287B057C0079B3D6 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		F7050D7F287C3AA50079B3D6 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		F7397B42287C3C52007E4A31 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		F7397B45287C576F007E4A31 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		F75636F1287994F70013EBC7 /* Nate Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nate Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75636F4287994F70013EBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75636F6287994F70013EBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F75636F8287994F70013EBC7 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		F75636F8287994F70013EBC7 /* ProductsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewController.swift; sourceTree = "<group>"; };
 		F75636FB287994F70013EBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F75636FD287994FA0013EBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7563700287994FA0013EBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,6 +138,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F7397B44287C552A007E4A31 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				F7397B45287C576F007E4A31 /* Consts.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
 		F75636E8287994F70013EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +171,7 @@
 		F75636F3287994F70013EBC7 /* Nate Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				F7397B44287C552A007E4A31 /* Consts */,
 				F7050D7C287B056C0079B3D6 /* Extensions */,
 				F75637262879AE3B0013EBC7 /* Controllers */,
 				F75637252879AE330013EBC7 /* Views */,
@@ -200,7 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				F756372B2879AEA20013EBC7 /* Cells */,
-				F75636F8287994F70013EBC7 /* ProductsViewController.swift */,
+				F75636F8287994F70013EBC7 /* ProductsCollectionViewController.swift */,
+				F7050D7F287C3AA50079B3D6 /* ProductDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				F756372C2879AEB00013EBC7 /* ProductCell.swift */,
+				F7397B42287C3C52007E4A31 /* ImageCollectionCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -461,12 +478,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75636F9287994F70013EBC7 /* ProductsViewController.swift in Sources */,
+				F75636F9287994F70013EBC7 /* ProductsCollectionViewController.swift in Sources */,
 				F75636F5287994F70013EBC7 /* AppDelegate.swift in Sources */,
 				F75637282879AE670013EBC7 /* ProductsApi.swift in Sources */,
+				F7397B43287C3C52007E4A31 /* ImageCollectionCell.swift in Sources */,
 				F756372D2879AEB00013EBC7 /* ProductCell.swift in Sources */,
 				F756372A2879AE820013EBC7 /* ApiConsts.swift in Sources */,
 				F7050D7E287B057C0079B3D6 /* CollectionExtension.swift in Sources */,
+				F7050D80287C3AA50079B3D6 /* ProductDetailsViewController.swift in Sources */,
+				F7397B46287C576F007E4A31 /* Consts.swift in Sources */,
 				F756372F2879B1260013EBC7 /* ProductModel.swift in Sources */,
 				F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */,
 			);

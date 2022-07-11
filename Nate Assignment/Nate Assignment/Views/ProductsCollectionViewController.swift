@@ -6,17 +6,17 @@
 //
 
 import UIKit
-import SafariServices
 
-class ProductsViewController: UIViewController {
+class ProductsCollectionViewController: UIViewController {
     // Consts
+    static let identifier = "ProductsCollectionViewController"
     private static let numberOfItemsInChunk = 16
     private static let animationDuration = 0.3
     
     // Outlets
-    @IBOutlet weak var productsCollection: UICollectionView!
-    @IBOutlet weak var updatingListView: UIView! /// This outlet isn't needed ATM but i'd probably need it adding features in the future.
-    @IBOutlet weak var updatingListHeightConst: NSLayoutConstraint!
+    @IBOutlet private weak var productsCollection: UICollectionView!
+    @IBOutlet private weak var updatingListView: UIView! /// This outlet isn't needed ATM but i'd probably need it adding features in the future.
+    @IBOutlet private weak var updatingListHeightConst: NSLayoutConstraint!
     
     // Variables
     private var refreshControl: UIRefreshControl!
@@ -34,7 +34,7 @@ class ProductsViewController: UIViewController {
 }
 
 // MARK: - Lifecycle methods
-extension ProductsViewController {
+extension ProductsCollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,7 +51,7 @@ extension ProductsViewController {
 }
 
 // MARK: - Convenience methods
-extension ProductsViewController {
+extension ProductsCollectionViewController {
     private func setupRefreshControl() {
         refreshControl = UIRefreshControl()
         productsCollection.alwaysBounceVertical = true
@@ -101,7 +101,7 @@ extension ProductsViewController {
 }
 
 // MARK: - Callbacks
-extension ProductsViewController {
+extension ProductsCollectionViewController {
     private func fetchProductsCompletion(_ result: Result<[ProductsModelContainer.ProductModel], Error>) {
         do {
             let output = try result.get()
@@ -119,7 +119,7 @@ extension ProductsViewController {
 }
 
 // MARK: - UICollectionViewDataSource
-extension ProductsViewController: UICollectionViewDataSource {
+extension ProductsCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return productsResults.count
     }
@@ -140,14 +140,16 @@ extension ProductsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let url = URL(string: productsResults[productsResults.index(productsResults.startIndex, offsetBy: indexPath.item)].url) else { return }
-        let safariVC = SFSafariViewController(url: url)
-        self.present(safariVC, animated: true)
+        guard let itemViewController = self.storyboard?.instantiateViewController(withIdentifier: ProductDetailsViewController.identifier) as? ProductDetailsViewController else { return }
+        let item = productsResults[productsResults.index(productsResults.startIndex, offsetBy: indexPath.item)]
+        let viewModel = ProductDetailsViewController.ViewModel(images: item.images, topTitle: item.title, topSubTitle: item.merchant, botTitle: item.createdAt, botSubtitle: item.updatedAt, link: item.url)
+        itemViewController.viewModel = viewModel
+        self.navigationController?.present(itemViewController, animated: true)
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
-extension ProductsViewController: UICollectionViewDelegateFlowLayout {
+extension ProductsCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -168,7 +170,7 @@ extension ProductsViewController: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: - UIScrollViewDelegate
-extension ProductsViewController: UIScrollViewDelegate {
+extension ProductsCollectionViewController: UIScrollViewDelegate {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
             scrollViewDidEndDecelerating(scrollView)
