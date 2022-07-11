@@ -9,8 +9,12 @@ import XCTest
 @testable import Nate_Assignment
 
 class Nate_AssignmentTests: XCTestCase {
-
+    var productsJson: ProductsModelContainer!
+    
+    
     override func setUpWithError() throws {
+        
+        
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -18,12 +22,34 @@ class Nate_AssignmentTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_productsParsing() throws {
+        if let url = Bundle(for: type(of: self)).url(forResource: "validPayloadJson", withExtension: "json") {
+                do {
+                    let data = try Data(contentsOf: url)
+                    let decoder = JSONDecoder()
+                    let jsonData = try decoder.decode(ProductsModelContainer.self, from: data)
+                    productsJson = jsonData
+                } catch {
+                    print("error:\(error)")
+                }
+            }
+        
+        XCTAssertTrue(productsJson != nil, "Failed to parse ProductsModelContainer")
+    }
+    
+    func test_productsParsingNoIdFail() throws {
+        if let url = Bundle(for: type(of: self)).url(forResource: "noIdPayloadJson", withExtension: "json") {
+                do {
+                    let data = try Data(contentsOf: url)
+                    let decoder = JSONDecoder()
+                    let jsonData = try decoder.decode(ProductsModelContainer.self, from: data)
+                    productsJson = jsonData
+                } catch {
+                    print("error:\(error)")
+                }
+            }
+        
+        XCTAssertFalse(productsJson != nil, "Failed to parse ProductsModelContainer")
     }
 
     func testPerformanceExample() throws {

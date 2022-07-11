@@ -14,6 +14,8 @@
 		F7050D80287C3AA50079B3D6 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7050D7F287C3AA50079B3D6 /* ProductDetailsViewController.swift */; };
 		F7397B43287C3C52007E4A31 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7397B42287C3C52007E4A31 /* ImageCollectionCell.swift */; };
 		F7397B46287C576F007E4A31 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7397B45287C576F007E4A31 /* Consts.swift */; };
+		F7397B48287C66A1007E4A31 /* validPayloadJson.json in Resources */ = {isa = PBXBuildFile; fileRef = F7397B47287C66A1007E4A31 /* validPayloadJson.json */; };
+		F74BA0A8287C69B000C7AC1C /* noIdPayloadJson.json in Resources */ = {isa = PBXBuildFile; fileRef = F74BA0A7287C69B000C7AC1C /* noIdPayloadJson.json */; };
 		F75636F5287994F70013EBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F4287994F70013EBC7 /* AppDelegate.swift */; };
 		F75636F7287994F70013EBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F6287994F70013EBC7 /* SceneDelegate.swift */; };
 		F75636F9287994F70013EBC7 /* ProductsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75636F8287994F70013EBC7 /* ProductsCollectionViewController.swift */; };
@@ -59,6 +61,8 @@
 		F7050D7F287C3AA50079B3D6 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		F7397B42287C3C52007E4A31 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
 		F7397B45287C576F007E4A31 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		F7397B47287C66A1007E4A31 /* validPayloadJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = validPayloadJson.json; path = "Nate AssignmentTests/jsonFiles/validPayloadJson.json"; sourceTree = SOURCE_ROOT; };
+		F74BA0A7287C69B000C7AC1C /* noIdPayloadJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noIdPayloadJson.json; sourceTree = "<group>"; };
 		F75636F1287994F70013EBC7 /* Nate Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nate Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75636F4287994F70013EBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75636F6287994F70013EBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			path = Consts;
 			sourceTree = "<group>";
 		};
+		F7397B49287C66A6007E4A31 /* jsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F74BA0A7287C69B000C7AC1C /* noIdPayloadJson.json */,
+				F7397B47287C66A1007E4A31 /* validPayloadJson.json */,
+			);
+			path = jsonFiles;
+			sourceTree = "<group>";
+		};
 		F75636E8287994F70013EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +202,7 @@
 		F756370A287994FA0013EBC7 /* Nate AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				F7397B49287C66A6007E4A31 /* jsonFiles */,
 				F756370B287994FA0013EBC7 /* Nate_AssignmentTests.swift */,
 			);
 			path = "Nate AssignmentTests";
@@ -358,6 +372,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74BA0A8287C69B000C7AC1C /* noIdPayloadJson.json in Resources */,
+				F7397B48287C66A1007E4A31 /* validPayloadJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
