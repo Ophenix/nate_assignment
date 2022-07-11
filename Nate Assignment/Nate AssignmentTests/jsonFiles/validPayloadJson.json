@@ -1,0 +1,51 @@
+{
+	"products": [
+		{
+			"id": "3f0aa82b-e5b1-4e97-b710-57cf8092cb33",
+			"createdAt": "2022-07-10T10:58:51.769Z",
+			"updatedAt": "2022-07-10T10:58:51.769Z",
+			"title": "Juan Soto Washington Nationals Nike Youth 2020 Gold Program Replica Player Jersey - White/Gold",
+			"images": [
+				"https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3802000/ff_3802240-4b85edcce601a42d6641_full.jpg"
+			],
+			"url": "https://www.fanatics.com/mlb/washington-nationals/juan-soto-washington-nationals-nike-youth-2020-gold-program-replica-player-jersey-white/gold/o-7887+t-58234569+p-8153449092+z-8-1618303961?_ref=p-CLP:m-GRID:i-r4c0:po-12",
+			"merchant": "Fanatics"
+		},
+		{
+			"id": "e57d388a-4024-464d-aeff-c6dcd03ef1ea",
+			"createdAt": "2022-07-10T10:58:51.768Z",
+			"updatedAt": "2022-07-10T10:58:51.768Z",
+			"title": "Ultra High Rise Ankle Straight Jeans",
+			"images": [],
+			"url": "https://www.abercrombie.com/shop/us/p/ultra-high-rise-ankle-straight-jeans-41996353?categoryId=6234532&seq=01&faceout=prod1",
+			"merchant": "Abercrombie & Fitch"
+		},
+		{
+			"id": "de28aa19-072b-4fb2-9107-305884b3e542",
+			"createdAt": "2022-07-10T10:58:51.767Z",
+			"updatedAt": "2022-07-10T10:58:51.767Z",
+			"title": "La Sélection Nomade",
+			"images": [
+				"https://media-live.byredo.com/media/catalog/product/optimized/8/5/8529df057ba542031c76db2227539212ccfb359560579b72c48c9f95905e385f/mob_la-selection-nomade-3x12-ml_1_1.jpg"
+			],
+			"url": "https://www.byredo.com/us_en/la-selection-nomade-eau-de-parfum-3x12ml",
+			"merchant": ""
+		},
+		{
+			"id": "c55cbddd-ee4a-4064-8dd4-b93c1cb32a1f",
+			"createdAt": "2022-07-10T10:58:51.766Z",
+			"updatedAt": "2022-07-10T10:58:51.766Z",
+			"title": "I Can't Feel My Face",
+			"images": [
+				"http://cdn.shopify.com/s/files/1/0252/5593/6086/products/Ican_tfeelmyfacesingle_1200x1200.png?v=1584755353",
+				"http://cdn.shopify.com/s/files/1/0252/5593/6086/products/ebox_1200x1200.png?v=1584755353",
+				"http://cdn.shopify.com/s/files/1/0252/5593/6086/products/creen_Shot_2019-10-24_at_2.43.31_PM_1200x1200.png?v=1584755353",
+				"https://cdn.shopify.com/s/files/1/0252/5593/6086/products/Ican_tfeelmyfacesingle_1200x1200.png?v=1584755353",
+				"https://cdn.shopify.com/s/files/1/0252/5593/6086/products/ican_tfeelmyfacebox_1200x1200.png?v=1584755353",
+				"https://cdn.shopify.com/s/files/1/0252/5593/6086/products/Screen_Shot_2019-10-24_at_2.43.31_PM_1200x1200.png?v=1584755353"
+			],
+			"url": "https://www.flatironpepper.com/products/i-cant-feel-my-face",
+			"merchant": "Flatiron Pepper Co"
+		}
+	]
+}
